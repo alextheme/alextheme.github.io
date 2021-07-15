@@ -1,0 +1,108 @@
+
+:root {
+  --mainColor: #6f3d10;
+}
+.fontTitle {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 80px;
+}
+.fontMain {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.background {
+  background: rgb(111,61,16);
+  background: linear-gradient(235deg, rgba(111,61,16,1) 0%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);}
+
+* {
+  .fontMain();
+  margin: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info_box {
+  .background();
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 50px;
+
+
+  .text {
+    max-width: 100%;
+    .title {
+      .fontTitle();
+      margin-bottom: 30px;
+    }
+    .description {
+
+    }
+    .contacts, .student_work {
+      text-align: right;
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+      li {
+        margin-right: 40px;
+        position: relative;
+        a {
+          text-decoration: none;
+          transition: 300ms ease-in-out all;
+          color: #6f3d10;
+
+          &:hover {
+            opacity: .5;
+            transition: 300ms ease-in-out all;
+          }
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(21px, -50%);
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: var(--mainColor);
+        }
+
+        &:last-child {
+          margin-right: 0;
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .image {
+    max-width: 30%;
+    float: right;
+    margin-left: 50px;
+
+    img {
+      border-radius: 20px;
+    }
+  }
+}
+
