@@ -37,6 +37,23 @@ img {
 }
 
 .info_box {
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #6f3d10;
+    background: linear-gradient(45deg,
+    rgba(111, 61, 16, 0.32) 0%,
+            rgba(255, 255, 255, 0) 100%,
+            rgba(255, 255, 255, 0) 100%);
+    border-radius: 50%;
+    transform: translate(50px, -50px);
+  }
   .background();
   border-radius: 30px;
   box-sizing: border-box;
