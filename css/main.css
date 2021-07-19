@@ -116,4 +116,73 @@ img {
 .info_box .image img {
   border-radius: 20px;
 }
-/*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 960px) {
+  .info_box .image {
+    max-width: 40%;
+  }
+  .info_box .text .title {
+    font-size: 70px;
+  }
+  * {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 20px;
+  }
+  .info_box .text .title {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .info_box .image {
+    max-width: 50%;
+  }
+  .info_box .text .title {
+    font-size: 42px;
+  }
+  * {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .info_box .image {
+    float: initial;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .info_box .text .title {
+    margin-top: 30px;
+  }
+  .info_box .text .student_work,
+  .info_box .text .contacts {
+    text-align: center;
+  }
+  .info_box .text .student_work ul,
+  .info_box .text .contacts ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .info_box .text .student_work li,
+  .info_box .text .contacts li {
+    margin-right: 0;
+  }
+  .info_box .text .student_work li:before,
+  .info_box .text .contacts li:before {
+    display: none;
+  }
+  .description {
+    margin-bottom: 20px;
+  }
+  .info_box .text .contacts {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .info_box .image {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
