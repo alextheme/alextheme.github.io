@@ -186,4 +186,13 @@ img {
     max-width: 100%;
   }
 }
+
+.description a {
+    color: #27ae60;
+    text-decoration: none;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
 /*# sourceMappingURL=main.css.map */
