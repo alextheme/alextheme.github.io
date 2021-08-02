@@ -117,3 +117,12 @@ img {
 .info_box .image img {
   border-radius: 20px;
 }
+
+.description a {
+    color: #27ae60;
+    text-decoration: none;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
