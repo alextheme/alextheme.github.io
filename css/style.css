@@ -1,0 +1,119 @@
+:root {
+  --mainColor: #6f3d10;
+}
+.fontTitle {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 80px;
+}
+.fontMain {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.background {
+  background: #6f3d10;
+  background: linear-gradient(235deg, #6f3d10 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+}
+* {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.info_box {
+  position: relative;
+  background: #6f3d10;
+  background: linear-gradient(235deg, #6f3d10 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 50px;
+}
+.info_box:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #6f3d10;
+  background: linear-gradient(45deg, rgba(111, 61, 16, 0.32) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 50%;
+  transform: translate(50px, -50px);
+}
+.info_box .text {
+  max-width: 100%;
+}
+.info_box .text .title {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+.info_box .text .contacts,
+.info_box .text .student_work {
+  text-align: right;
+}
+.info_box .text .contacts ul,
+.info_box .text .student_work ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.info_box .text .contacts li,
+.info_box .text .student_work li {
+  margin-right: 40px;
+  position: relative;
+}
+.info_box .text .contacts li a,
+.info_box .text .student_work li a {
+  text-decoration: none;
+  transition: 300ms ease-in-out all;
+  color: #6f3d10;
+}
+.info_box .text .contacts li a:hover,
+.info_box .text .student_work li a:hover {
+  opacity: 0.5;
+  transition: 300ms ease-in-out all;
+}
+.info_box .text .contacts li:before,
+.info_box .text .student_work li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(21px, -50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--mainColor);
+}
+.info_box .text .contacts li:last-child,
+.info_box .text .student_work li:last-child {
+  margin-right: 0;
+}
+.info_box .text .contacts li:last-child:before,
+.info_box .text .student_work li:last-child:before {
+  display: none;
+}
+.info_box .image {
+  max-width: 30%;
+  float: right;
+  margin-left: 50px;
+}
+.info_box .image img {
+  border-radius: 20px;
+}
