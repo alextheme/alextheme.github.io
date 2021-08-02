@@ -70,6 +70,7 @@ img {
 .info_box .text .contacts ul,
 .info_box .text .student_work ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 .info_box .text .contacts li,
