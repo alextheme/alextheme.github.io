@@ -1,75 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CV</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Manrope:wght@400;700&display=swap"
-          rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <script src="https://use.fontawesome.com/013df0eeb3.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <main>
-    <section>
-        <div class="info_box wrapper">
-            <div class="text">
-                <div class="image">
-                    <img src="images/mi.jpg" alt="mi">
-                </div>
-                <h1 class="title">Oleksandr Borimsky</h1>
-                <div class="description">
-                    <p>Frontend development student.</p>
-                    <p>Finished courses at school <a href="https://programming.org.ua/ua">Ш++</a> p2p computer sciense in 2021.</p>
-                    <p>I have practice in html, css, js / jq, a little in php,
-                        as before that I took courses on developing templates for wordpress.</p>
-                </div>
-
-                <div class="links">
-                    <div class="student_work">
-                        <h2 class="student_work">my student work</h2>
-                        <ul>
-                                                 
-                            <li><a href="https://alextheme.github.io/cuda/" target="_blank">cuda</a></li>
-                            <li><a href="https://alextheme.github.io/exotico/" target="_blank">exotico</a></li>
-                            <li><a href="https://alextheme.github.io/smoothie/" target="_blank">smoothie</a></li>
-                            <li><a href="https://alextheme.github.io/seedOfHope/" target="_blank">seedOfHope</a></li>
-                                            
-                            <li><a href="https://alextheme.github.io/di-gi/" target="_blank">di-gi</a></li>                      
-                            <li><a href="https://alextheme.github.io/stage1_task2_js/" target="_blank">1_2_js</a></li>
-                            <li><a href=" https://alextheme.github.io/stage1_task3_tables/" target="_blank">1_3_tables</a></li>
-                            <li><a href="https://alextheme.github.io/stage1_task4_backend/" target="_blank">1_4_backend</a></li>
-                            <li><a href="https://alextheme.github.io/stage1_task5-npm_typescript/" target="_blank">1_5_typescript</a></li>
-                             
-                            <li><a href="https://alextheme.github.io/Trello-react-2/" target="_blank">myTrello react</a></li>
-                            <li><a href="https://alextheme.github.io/pokemon-react/" target="_blank">pokeApi react</a></li>
-                            <li><a href="https://alextheme.github.io/layout_html_cards/" target="_blank">product cards</a></li>
-                        </ul>
-                    </div>
-                    <div class="contacts">
-                        <h2 class="my_contacts">my contacts</h2>
-                        <ul>
-                            <li><a href="https://github.com/alextheme" target="_blank">github</a></li>
-                            <li><a href="https://tlgg.ru/@alexborim" target="_blank">telegram</a></li>
-                            <li><a href="mailto:favorstreet21@gmail.com" target="_blank">gmail</a></li>
-                            <li><a href="https://discord.gg/7jWdG72aFE" target="_blank">discord</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-
-            </div>
-<!--            <div class="image">-->
-<!--                <img src="images/mi.jpg" alt="mi">-->
-<!--            </div>-->
+  <section>
+    <div class="info_box wrapper">
+      <div class="text">
+        <div class="image">
+          <img src="images/mi.jpg" alt="mi">
         </div>
-    </section>
+        <h1 class="title">Oleksandr Borimsky</h1>
+        <div class="description">
+          <p>Frontend development student.</p>
+          <p>Finished courses at school <a href="https://programming.org.ua/ua">Ш++</a> p2p computer sciense in 2021.</p>
+          <p>I have practice in html, css, js / jq, a little in php,
+              as before that I took courses on developing templates for wordpress.</p>
+        </div>
+
+        <div class="links">
+            <div class="contacts">
+              <h2 class="my_contacts">my contacts</h2>
+                <ul>
+                  <li><a href="https://github.com/alextheme" target="_blank">github</a></li>
+                  <li><a href="https://tlgg.ru/@alexborim" target="_blank">telegram</a></li>
+                  <li><a href="mailto:favorstreet21@gmail.com" target="_blank">gmail</a></li>
+                  <li><a href="https://discord.gg/7jWdG72aFE" target="_blank">discord</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+            
+
+      <section class="portfolio-sections">
+        <h2 class="student_work">my student work</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Домашние задания Школа Ш++
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="https://alextheme.github.io/di-gi/" target="_blank">
+                    <img src="images/portfolio/DiGi.png" alt="di-gi">
+                  </a></li>                      
+                  <li><a href="https://alextheme.github.io/stage1_task2_js/task01_02.html" target="_blank">
+                    <img src="images/portfolio/task1.png" alt="task01_02">
+                  </a></li>
+                  <li><a href=" https://alextheme.github.io/stage1_task3_tables/" target="_blank">
+                    <img src="images/portfolio/table.png" alt="task3_tables">
+                  </a></li>
+                  <li><a href="https://alextheme.github.io/stage1_task4_backend/" target="_blank">
+                    <img src="images/portfolio/table2.png" alt="task4_backend">
+                  </a></li>
+                  <li><a href="https://alextheme.github.io/stage1_task5-npm_typescript/" target="_blank">
+                    <img src="images/portfolio/timer.png" alt="timer">
+                  </a></li> 
+                  <li><a href="https://alextheme.github.io/Trello-react-2/" target="_blank">
+                    <img src="images/portfolio/trello.png" alt="trello">
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Работы из курса Александра Сокирки
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="https://alextheme.github.io/cuda/" target="_blank">
+                    <img src="images/portfolio/cuda.png" alt="cuda">
+                  </a></li>
+                  <li><a href="https://alextheme.github.io/exotico/" target="_blank">
+                    <img src="images/portfolio/exotico.png" alt="exotico">
+                  </a></li>
+                  <li><a href="https://alextheme.github.io/smoothie/" target="_blank">
+                    <img src="images/portfolio/smoothie.png" alt="smoothie">
+                  </a></li>
+                  <li><a href="https://alextheme.github.io/seedOfHope/" target="_blank">
+                    <img src="images/portfolio/s.png" alt="seedOfHope">
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Другие работы
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="https://alextheme.github.io/pokemon-react/" target="_blank">
+                    <img src="images/portfolio/poke.png" alt="list pokeApi">
+                  </a></li>
+                  <li><a href="https://alextheme.github.io/layout_html_cards/" target="_blank">
+                    <img src="images/portfolio/prod.png" alt="product cards">
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
 </main>
+
+<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

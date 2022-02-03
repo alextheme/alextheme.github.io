@@ -195,4 +195,66 @@ img {
 .description a:hover {
     text-decoration: underline;
 }
-/*# sourceMappingURL=main.css.map */
+
+/* Bootstrap Accordeon styles */
+.accordion-button {
+  color: var(--mainColor);
+  background-color: #b39c87;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--mainColor);
+  background-color: #b39c87;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-body {
+  background: #c9b7a7;
+}
+.accordion-button::after {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-image: none;
+  border-left: 2px solid var(--mainColor);
+  border-bottom: 2px solid var(--mainColor);
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: rotate(135deg);
+  opacity: .3;
+}
+.accordion-button:not(.collapsed) {
+  background: #9d7b5c;
+  color:rgb(77, 43, 14);
+  -webkit-box-shadow: 0px 22px 30px -24px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 22px 30px -24px rgba(0,0,0,0.75);
+  box-shadow: 0px 22px 30px -24px rgba(0,0,0,0.75);
+}
+.accordion-body ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.accordion-body ul li {
+  transition: all 300ms ease-in-out;
+}
+.accordion-body ul li:hover {
+  transition: all 300ms ease-in-out;
+  transform: scale(1.08);
+  -webkit-box-shadow: 0px 5px 24px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 24px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 24px -6px rgba(0,0,0,0.75);
+}
+
+@media only screen and (max-width: 720px) {
+  .accordion-body ul {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}
