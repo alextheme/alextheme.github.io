@@ -48,7 +48,7 @@ img {
   box-sizing: border-box;
   padding: 50px;
 }
-.info_box:before {
+.info_box::before {
   content: "";
   width: 40px;
   height: 40px;
@@ -58,7 +58,19 @@ img {
   background: var(--bg-color);
   background: var(--bg-gradient-color);
   border-radius: 50%;
-  transform: translate(50px, -50px);
+  /* transform: translate(50px, -50px); */
+}
+.info_box::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--bg-color);
+  background: var(--bg-gradient-color);
+  border-radius: 50%;
+  transform: translate(10px, -10px) rotate(180deg);
 }
 .info_box .text {
   max-width: 100%;
